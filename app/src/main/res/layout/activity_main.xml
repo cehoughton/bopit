@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +9,12 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="#551A8B"
-    tools:context="com.example.guest.bopit.MainActivity">
+
+    tools:context=".ui.MainActivity">
+    <com.hookedonplay.decoviewlib.DecoView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/dynamicArcView"/>
 
     <ImageView
         android:layout_width="150dp"
@@ -25,15 +31,8 @@
         android:id="@+id/gear"
         android:src="@drawable/gear"
         android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
-
-    <ImageView
-        android:layout_width="150dp"
-        android:layout_height="wrap_content"
-        android:id="@+id/nail"
-        android:src="@drawable/nail"
-        android:layout_below="@+id/balloon" />
+        android:layout_alignLeft="@+id/tube"
+        android:layout_alignStart="@+id/tube" />
 
     <ImageView
         android:layout_width="150dp"
